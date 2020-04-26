@@ -23,7 +23,6 @@ jobs:
     # Runs a single command using the runners shell
     - name: Setup Elm
       uses: justgook/setup-elm@v1
-    - name: Compile Elm
     - run: elm make src/Main.elm --output=build/index.html
     - name: Push to gh-pages
     - uses: JamesIves/github-pages-deploy-action@releases/v3
